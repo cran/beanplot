@@ -1,0 +1,17 @@
+bbd44c02a094d4d85cd37d6f223e4aea *DESCRIPTION
+4f62f62babed7f3a96b1e0012dec1877 *NAMESPACE
+ed939392f60db3e57b47972cc8f874c7 *R/beanplot.R
+b2554f2f451faaed6b3f00279b3d48fe *R/beanplotbeanlines.R
+5046301ace96ea0d9faba3c97e0f75a8 *R/beanplotinnerborders.R
+75d4853f6158b3a2bc002cbf70925700 *R/beanplotpolyshapes.R
+178d657cf50ec3be509f098c1cb2c760 *R/beanplotscatters.R
+c9bd5c3e57d2396884bb586322f93acd *R/fixcolorvector.R
+ea895a534c60ad0d711789f85bef4306 *R/getgroupsfromarguments.R
+3debf57a3aa0b4d06dd287e7c64dfdfd *R/makecombinedname.R
+acc105b21a2e58884c14f589d73568c7 *R/seemslog.R
+d3af68337587ca870969fe981ab33110 *inst/CITATION
+aeb3ff1c3fb6675fd51df346bf8ebf94 *inst/doc/beanplot.Rnw
+51eb365f4355ed655a51f73688d8e3d9 *inst/doc/beanplot.bib
+15a04d95a171232255c754a6ea1bf78c *inst/doc/beanplot.pdf
+6903d40988b1111e34bc857a62122e3f *man/beanplot-package.Rd
+50b772005777e4972e365fdfb401d3ff *man/beanplot.Rd
