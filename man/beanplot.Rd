@@ -59,6 +59,7 @@ beanplot(..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
 }
 
 \details{
+  Use the "what" parameter to omit certain parts from drawing. 
   Most parameters are compatible with \code{\link{boxplot}} and
   \code{\link{stripchart}}. For compatibility, arguments with the
   name "formula" or "x" are used as data. However, data or formulas
@@ -67,8 +68,12 @@ beanplot(..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
 }
 
 \value{
-  \item{bw}{The bandwith (bw) used.}
-  \item{wd}{The bean width (wd) used.}
+  \item{bw}{the bandwidth (bw) used.}
+  \item{wd}{the bean width (wd) used.}
+  \item{names}{a vector of names for the groups.}
+  \item{stats}{a vector of statistics calculated for the beanlines.}
+  \item{overall}{statistic calculated for the overall line.}
+  \item{log}{log axis that was selected.}
 }
 
 \references{
@@ -78,12 +83,13 @@ beanplot(..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
 }
 
 \author{
-  Peter Kampstra <pkampst=beanplot@cs.vu.nl>
+  Peter Kampstra <beanplot@kampstra.net>
 }
 
 \note{
-  In case of more than 5000 values per bean, the autodetection of log fails. In such cases, use
-  \code{log=""} or \code{log="y"}.
+  In case of more than 5000 values per bean, the autodetection of the log parameter is approximated. In such cases, use
+  \code{log=""} or \code{log="y"}. Also, the what parameter can help to omit parts that are not useful in certain plots, 
+  and take time to draw.
 }
 
 \seealso{
@@ -100,7 +106,8 @@ boxplot(count ~ spray, data = InsectSprays, col = "lightgray")
 beanplot(count ~ spray, data = InsectSprays, col = "lightgray", border = "grey", cutmin = 0)
 
 boxplot(count ~ spray, data = InsectSprays, col = "lightgray")
-beanplot(count ~ spray, data = InsectSprays, col = "lightgray", border = "grey", overallline = "median")
+beanplot(count ~ spray, data = InsectSprays, col = "lightgray", border = "grey",
+        overallline = "median")
 
 boxplot(decrease ~ treatment, data = OrchardSprays,
         log = "y", col = "bisque", ylim = c(1,200))

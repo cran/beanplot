@@ -14,15 +14,15 @@
 \tabular{ll}{
 Package: \tab beanplot\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2008-11-06\cr
+Version: \tab 1.2\cr
+Date: \tab 2014-09-15\cr
 License: \tab GPL-2\cr
 }
 The function \code{\link{beanplot}} does all the work.
 }
 
 \author{
-  Peter Kampstra <pkampst=beanplot@cs.vu.nl>
+  Peter Kampstra <beanplot@kampstra.net>
 }
 
 \references{

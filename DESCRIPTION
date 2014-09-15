@@ -2,14 +2,15 @@ Package: beanplot
 Type: Package
 Title: Visualization via Beanplots (like Boxplot/Stripchart/Violin
         Plot)
-Version: 1.1
-Date: 2008-11-06
+Version: 1.2
+Date: 2014-09-15
 Author: Peter Kampstra
-Maintainer: Peter Kampstra <pkampst=beanplot@cs.vu.nl>
+Maintainer: Peter Kampstra <beanplot@kampstra.net>
 Description: Plots univariate comparison graphs, an alternative to
         boxplot/stripchart/violin plot.
 Suggests: vioplot, lattice
 License: GPL-2
-Packaged: Thu Nov 6 23:12:12 2008; zeileis
+Packaged: 2014-09-15 20:03:16 UTC; PeterKa
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2008-11-06 22:33:45
+Date/Publication: 2014-09-19 11:40:15

@@ -78,7 +78,8 @@ function (..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
     else combinedpolygons <- FALSE
     col <- lapply(col, fixcolorvector)
     col <- rep(col, length.out = n)
-    border <- rep(border, length.out = n)
+	if (!is.null(border))
+        border <- rep(border, length.out = n)
 
     #set the logarithm handling settings
     if (!add && log == "auto") {
@@ -173,15 +174,19 @@ function (..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
         if (horizontal) 
             abline(v = val, lty = 3)
         else abline(h = val, lty = 3)
-    }
+    } else {
+		val = "value not calculated, overall line was omitted"
+	}
     if (what[2]) {
         beanplotpolyshapes(side, dens, at, wd2, combinedpolygons, 
             displayn, n, col, border, horizontal, mlog, mexp)
     }
     if (what[3]) {
-        beanplotbeanlines(groups, side, beanlines, beanlinewd, 
+        stats = beanplotbeanlines(groups, side, beanlines, beanlinewd, 
             at, boxwex, n, col, horizontal, mlog, mexp)
-    }
+    } else {
+		stats = "not calculated, beanlines were omitted"
+	}
     if (what[4]) {
         beanplotscatters(groups, side, method, jitter, dens, 
             at, wd2, boxwex, n, ll, maxstripline, col, horizontal, 
@@ -199,6 +204,5 @@ function (..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
     do.call("title", titlepars)
 
     #return generated data that can be used for subsequent calls
-    invisible(list(bw = bw, wd = wd))
+    invisible(list(bw = bw, wd = wd, names = names, stats = stats, overall = val, log = log))
 }
-

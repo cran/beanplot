@@ -1,10 +1,10 @@
 `fixcolorvector` <-
 function(col) {
     mrgb <- function(col) {
-        rgb(col[1], col[2], col[3], max = 255)
+        rgb(col[1], col[2], col[3], maxColorValue = 255)
     }
     #mrgba <- function(col, alpha) {
-    #    rgb(col[1], col[2], col[3], alpha * 255, max = 255)
+    #    rgb(col[1], col[2], col[3], alpha * 255, maxColorValue = 255)
     #}
     if (missing(col) || ((length(col) == 1) && all(col2rgb(col, 
         alpha = TRUE) == col2rgb(par("fg"), alpha = TRUE)))) {
