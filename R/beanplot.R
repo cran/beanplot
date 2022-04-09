@@ -204,5 +204,6 @@ function (..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
     do.call("title", titlepars)
 
     #return generated data that can be used for subsequent calls
-    invisible(list(bw = bw, wd = wd, names = names, stats = stats, overall = val, log = log))
+    invisible(list(bw = bw, wd = wd, names = names, stats = stats, 
+        overall = val, log = log, ylim = ylim, xlim = xlim))
 }

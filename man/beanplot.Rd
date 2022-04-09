@@ -74,12 +74,14 @@ beanplot(..., bw = "SJ-dpi", kernel = "gaussian", cut = 3, cutmin = -Inf,
   \item{stats}{a vector of statistics calculated for the beanlines.}
   \item{overall}{statistic calculated for the overall line.}
   \item{log}{log axis that was selected.}
+  \item{ylim}{ylim that was used.}
+  \item{xlim}{xlim that was used.}
 }
 
 \references{
   Kampstra, P. (2008) Beanplot: A Boxplot Alternative for Visual Comparison of Distributions.
   \emph{Journal of Statistical Software, Code Snippets}, \bold{28}(1), 1-9.
-  URL \url{http://www.jstatsoft.org/v28/c01/}
+  \doi{10.18637/jss.v028.c01}
 }
 
 \author{

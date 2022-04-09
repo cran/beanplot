@@ -1,1 +1,7 @@
 export(beanplot)
+importFrom("grDevices", "col2rgb", "rgb")
+importFrom("graphics", "abline", "box", "lines", "par", "plot.new",
+           "polygon", "segments")
+importFrom("stats", "aggregate", "approx", "density", "median",
+           "na.omit", "quantile", "shapiro.test")
+importFrom("utils", "head", "tail")

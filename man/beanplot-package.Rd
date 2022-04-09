@@ -14,8 +14,8 @@
 \tabular{ll}{
 Package: \tab beanplot\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
-Date: \tab 2014-09-15\cr
+Version: \tab 1.3.1\cr
+Date: \tab 2022-04-09\cr
 License: \tab GPL-2\cr
 }
 The function \code{\link{beanplot}} does all the work.
@@ -28,7 +28,7 @@ The function \code{\link{beanplot}} does all the work.
 \references{
   Kampstra, P. (2008) Beanplot: A Boxplot Alternative for Visual Comparison of Distributions.
   \emph{Journal of Statistical Software, Code Snippets}, \bold{28}(1), 1-9.
-  URL \url{http://www.jstatsoft.org/v28/c01/}
+  \doi{10.18637/jss.v028.c01}
 }
 
 \seealso{
@@ -38,7 +38,7 @@ The function \code{\link{beanplot}} does all the work.
 
 \examples{
  beanplot(rnorm(100), runif(100))
- vignette("beanplot", package = "beanplot")
+ if (interactive()) vignette("beanplot", package = "beanplot")
 }
 
 \keyword{package}

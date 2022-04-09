@@ -8,11 +8,11 @@ citEntry(entry = "Article",
   volume       = "28",
   number       = "1",
   pages        = "1--9",
-  url          = "http://www.jstatsoft.org/v28/c01/",
+  url          = "https://doi.org/10.18637/jss.v028.c01",
 
   textVersion  =
   paste("Peter Kampstra (2008).",
         "Beanplot: A Boxplot Alternative for Visual Comparison of Distributions.",
         "Journal of Statistical Software, Code Snippets 28(1). 1-9.",
-        "URL http://www.jstatsoft.org/v28/c01/.")
+        "URL https://doi.org/10.18637/jss.v028.c01.")
 )

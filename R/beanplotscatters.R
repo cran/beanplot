@@ -25,7 +25,7 @@ function (groups, side, method, jitter, dens, at, wd2, boxwex,
         if (col[[i]][2] != col[[i]][3]) {
             crossings <- approx(dens[["x", i]], dens[["y", i]], 
                 mlog(y[[1]]))$y * wd2
-            crossings <- pmin(crossings, y[[2]])
+            crossings <- pmin(crossings, y[[2]], na.rm = TRUE)
             extra <- unlist(y[2]) - crossings
         }
         else {
